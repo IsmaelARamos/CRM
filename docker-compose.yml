@@ -1,0 +1,15 @@
+services:
+  crm-db:
+    image: postgres:16-alpine # Versão estável e leve do PostgreSQL / Stable and lightweight version
+    container_name: crm-postgres-container
+    environment:
+      POSTGRES_DB: crm_enterprise_db   # Nome do banco de dados / Database name
+      POSTGRES_USER: crm_admin         # Usuário do banco / Database user
+      POSTGRES_PASSWORD: admin_password # Senha do banco / Database password
+    ports:
+      - "5432:5432"                    # Porta interna e externa / Internal and external port
+    volumes:
+      - crm_db_data:/var/lib/postgresql/data # Garante que os dados não somem ao parar o container / Persists data
+
+volumes:
+  crm_db_data: # Volume gerenciado pelo Docker / Docker-managed volume
