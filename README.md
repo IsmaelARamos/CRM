@@ -27,6 +27,13 @@ O ecossistema foi projetado para evoluir de um núcleo transacional seguro para 
 ![Arquitetura do CRM Enterprise](docs/architecture.png)
 
 ---
+### ✅ Sprint 1 - Issue #1: Persistência e Controle de Versão (Concluído / Done)
+
+#### ✔️ Concluído / Completed:
+* **Ambiente Conteinerizado:** Configuração de banco de dados **PostgreSQL 16** isolado via `docker-compose.yml` com persistência de volume (`crm_db_data`).
+* **Migrations Automatizadas:** Integração do **Flyway** para versionamento estruturado do esquema (`V1__create_table_users.sql`), criando a tabela `tb_users` e populando o usuário administrador inicial.
+* **Mapeamento ORM:** Configuração do **Spring Data JPA** no `application.yml` com validação estrita de esquema (`ddl-auto: validate`) para garantir integridade entre as entidades e o banco.
+* **Governança Ágil:** Criação da *User Story*, execução em branch isolada (`Git Flow`) e fechamento automatizado no **GitHub Projects** via *Pull Request* (`Closes #1`).
 
 
 ### 🚧 Sprint 1 - Issue #2: Segurança e Autenticação JWT (Em Progresso / In Progress)
