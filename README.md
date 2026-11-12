@@ -24,7 +24,7 @@
 
 O ecossistema foi projetado para evoluir de um núcleo transacional seguro para uma arquitetura orientada a eventos desacoplada.
 
-![Arquitetura do CRM Enterprise](docs/architecture.png)
+![Arquitetura do CRM Enterprise](docs/architecture.jpg)
 
 ---
 ### ✅ Sprint 1 - Issue #1: Persistência e Controle de Versão (Concluído / Done)
@@ -50,11 +50,9 @@ O ecossistema foi projetado para evoluir de um núcleo transacional seguro para 
 * [ ] **Controlador REST (`AuthController`):** Exposição dos endpoints `/api/v1/auth/register` e `/api/v1/auth/login`.
 * [ ] **Validação End-to-End:** Teste de geração e uso do Token JWT via Postman/Insomnia e abertura de Pull Request (`Closes #2`).
 
-![Fluxo de Autenticação JWT](docs/jwt-authentication-flow.png)
+![Fluxo de Autenticação JWT](docs/jwt-authentication-flow.jpg)
 
 
-
-![Fluxo de Autenticação JWT](docs/jwt-authentication-flow.png)
 
 ---
 
